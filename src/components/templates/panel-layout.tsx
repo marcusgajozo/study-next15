@@ -1,4 +1,4 @@
-import { Menu } from "../organisms/Menu";
+import { Menu } from "../organisms/menu";
 
 export const PanelLayout = ({
   children,
@@ -6,7 +6,7 @@ export const PanelLayout = ({
   return (
     <main className="flex h-screen">
       <Menu />
-      <section className="p-4">{children}</section>
+      <section className="p-4 overflow-auto w-full">{children}</section>
     </main>
   );
 };
